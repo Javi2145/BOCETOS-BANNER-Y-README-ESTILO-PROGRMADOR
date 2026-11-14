@@ -1,0 +1,381 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="4590" viewBox="0 0 900 4590">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07130f"/>
+      <stop offset="1" stop-color="#0d2e24"/>
+    </linearGradient>
+    <pattern id="p1" width="300" height="112" patternUnits="userSpaceOnUse">
+      <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#1FA974" opacity="0.30">
+        <text x="0" y="20">01001101 01100101 01110100 01101111</text>
+        <text x="0" y="48">10110100 11100101 00101101 01001011</text>
+        <text x="0" y="76">01101010 01100001 01110110 01100001</text>
+        <text x="0" y="104">11010010 10011010 01101001 11100010</text>
+      </g>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-300 0" dur="40s" repeatCount="indefinite"/>
+    </pattern>
+    <pattern id="p2" width="300" height="112" patternUnits="userSpaceOnUse">
+      <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#5EF2A8" opacity="0.14">
+        <text x="0" y="34">00110101 10101100 01110100 01101010</text>
+        <text x="0" y="62">01110110 01101111 01101001 01100100</text>
+        <text x="0" y="90">01001010 01010000 01001111 01001111</text>
+        <text x="0" y="118">00101101 01001011 01100101 01110100</text>
+      </g>
+      <animateTransform attributeName="patternTransform" type="translate" from="-150 0" to="150 0" dur="55s" repeatCount="indefinite"/>
+    </pattern>
+    <style>
+      .page{width:900px;box-sizing:border-box;padding:36px 40px;font-family:'Segoe UI',Arial,sans-serif;color:#D1FAE5;font-size:15px;line-height:1.5}
+      .center{text-align:center}
+      .title{font-size:54px;font-weight:800;letter-spacing:4px;color:#5EF2A8;margin:0}
+      .sub{font-size:21px;font-weight:600;color:#A7F3D0;margin:6px 0 18px}
+      .pill{display:inline-block;padding:5px 14px;border-radius:6px;font-weight:700;font-size:12px;letter-spacing:1.5px;margin:3px;color:#07130f}
+      .p1{background:#00E676}.p2{background:#6EE7B7}.p3{background:#14B8A6}
+      .it{font-style:italic;color:#A7F3D0;font-size:14px;margin:14px 0}
+      .n{display:inline-block;border:1px solid rgba(94,242,168,.45);color:#5EF2A8;padding:5px 12px;border-radius:6px;font-size:13px;margin:3px;background:rgba(7,19,15,.7)}
+      .panel{background:rgba(7,19,15,.72);border:1px solid rgba(94,242,168,.25);border-radius:12px;padding:18px 22px;margin-bottom:22px}
+      h2{font-size:24px;color:#5EF2A8;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #1FA974}
+      p{margin:0 0 8px}
+      table{width:100%;border-collapse:collapse;font-size:14px}
+      th{background:rgba(15,61,46,.9);color:#5EF2A8;text-align:left;padding:9px 12px;border:1px solid rgba(94,242,168,.25)}
+      td{padding:9px 12px;border:1px solid rgba(94,242,168,.2)}
+      code{background:rgba(94,242,168,.15);color:#6EE7B7;font-family:Consolas,'Courier New',monospace;padding:1px 6px;border-radius:4px;font-size:13px}
+      pre{background:rgba(2,10,7,.88);border:1px solid rgba(94,242,168,.25);border-radius:8px;padding:12px 16px;font-family:Consolas,'Courier New',monospace;font-size:14px;color:#A7F3D0;margin:10px 0;white-space:pre;line-height:1.45}
+      .k{color:#5EF2A8;font-weight:700}.s{color:#FCD34D}.c{color:#6B8F82}
+      .ok{text-align:center}
+      .yes{color:#5EF2A8;font-weight:800}.no{color:#F87171;font-weight:800}
+      .fig{display:block;width:100%;margin:10px 0 6px}
+      .cap{text-align:center;font-size:13px;font-style:italic;color:#A7F3D0;margin:0}
+      .flow{display:flex;align-items:flex-start;justify-content:space-between;margin:16px 0 6px}
+      .step{width:112px;text-align:center}
+      .circ{width:58px;height:58px;border-radius:50%;margin:0 auto 8px;background:#00E676;color:#07130f;font-weight:800;font-size:24px;line-height:58px;border:3px solid #5EF2A8}
+      .circ.b{background:#14B8A6}.circ.g{background:#6EE7B7}
+      .st{font-weight:700;color:#5EF2A8;font-size:14px}
+      .sd{font-size:12px;color:#A7F3D0;line-height:1.35}
+      .arr{color:#5EF2A8;font-size:30px;font-weight:800;line-height:58px}
+      .foot{text-align:center;font-family:Consolas,monospace;color:#1FA974;font-size:13px;margin-top:6px}
+    </style>
+  </defs>
+
+  <rect width="900" height="4590" fill="url(#bg)"/>
+  <rect width="900" height="4590" fill="url(#p1)"/>
+  <rect width="900" height="4590" fill="url(#p2)"/>
+
+  <foreignObject x="0" y="0" width="900" height="4590">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+
+      <div class="center">
+        <h1 class="title">☕ MÉTODOS EN JAVA</h1>
+        <div class="sub">Parámetros, <code>void</code> y retorno de valores</div>
+        <span class="pill p1">JAVA · POO</span>
+        <span class="pill p2">TEMA · MÉTODOS</span>
+        <span class="pill p3">EQUIPO · 4 INTEGRANTES</span>
+        <div class="it">Exposición de Algoritmos y Lógica de Programación · Programación Orientada a Objetos</div>
+        <div>
+          <span class="n">Equipo</span><span class="n">Ruta de la clase</span><span class="n">¿Qué es un método?</span><span class="n">Entrada-Proceso-Salida</span><span class="n">Anatomía</span><span class="n">void</span><span class="n">return</span><span class="n">void vs return</span><span class="n">Ciclo del método</span><span class="n">Compilación</span><span class="n">Estructura</span>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:24px">
+        <h2>👥 Equipo</h2>
+        <table>
+          <tr><th>N.º</th><th>Integrante</th><th>Rol en la exposición</th><th>Responsabilidad</th></tr>
+          <tr><td>1</td><td>Kevin Garcés</td><td>Investigar · Analista</td><td>Reunir la teoría y preparar la prueba diagnóstica.</td></tr>
+          <tr><td>2</td><td>Esteban Zambrano</td><td>Preparar · Diseñar</td><td>Armar las diapositivas y ordenar el contenido.</td></tr>
+          <tr><td>3</td><td>Erick Cordonez</td><td>Construir · Programar</td><td>Escribir y probar los ejemplos de código.</td></tr>
+          <tr><td>4</td><td>Cristian Gómez</td><td>Documentar · Archivar</td><td>Elaborar el informe y mantener este README.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🔎 Ruta de la clase</h2>
+        <table>
+          <tr><th>Fase</th><th>Momento</th><th>Qué hacemos</th></tr>
+          <tr><td><code>01</code></td><td>Diagnóstico</td><td>Prueba diagnóstica para medir lo que ya se sabe de métodos.</td></tr>
+          <tr><td><code>02</code></td><td>Teoría</td><td>¿Qué es un método? Anatomía, <code>void</code> y <code>return</code>.</td></tr>
+          <tr><td><code>03</code></td><td>Código</td><td>Ejemplos de código escritos y probados en vivo.</td></tr>
+          <tr><td><code>04</code></td><td>Comparación</td><td><code>void</code> vs <code>return</code>: cuándo usar cada uno.</td></tr>
+          <tr><td><code>05</code></td><td>Cierre</td><td>Conclusiones y preguntas.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🧩 ¿Qué es un método?</h2>
+        <p>Un <b>método</b> es un bloque de código con nombre que realiza una tarea específica y se puede <b>reutilizar</b> las veces que haga falta, sin repetir código.</p>
+        <pre><span class="k">public static void</span> saludar() {
+    System.out.println(<span class="s">"Hola, mundo"</span>);
+}</pre>
+      </div>
+
+      <div class="panel">
+        <h2>⚙️ Entrada → Proceso → Salida</h2>
+        <p>Todo método funciona como una máquina: recibe <b>datos</b> (parámetros), los <b>transforma</b> en el cuerpo y entrega un <b>resultado</b> (<code>return</code>) o ejecuta una acción (<code>void</code>).</p>
+        <div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 442" width="780" height="442" style="width:100%;height:auto;display:block" role="img" aria-label="Entrada, Proceso, Salida">
+<defs>
+<linearGradient id="ipoGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5EF2A8" stop-opacity=".16"/><stop offset="1" stop-color="#5EF2A8" stop-opacity=".03"/></linearGradient>
+<radialGradient id="ipoBall" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D1FAE5"/><stop offset="1" stop-color="#14B8A6"/></radialGradient>
+<g id="ipoCube">
+<polygon points="0,0 24,-24 174,-24 150,0" fill="#5EF2A8" fill-opacity=".22"/>
+<polygon points="150,0 174,-24 174,126 150,150" fill="#14B8A6" fill-opacity=".16"/>
+<rect width="150" height="150" rx="3" fill="url(#ipoGlass)"/>
+<polygon points="-10,150 184,150 174,168 -10,168" fill="#07130f" fill-opacity=".9"/>
+</g>
+<g id="ipoRock">
+<polygon points="-10,-3 -5,-9 3,-10 10,-4 9,5 2,10 -7,8" fill="#0f5a43"/>
+<path d="M-4,-5 L1,1 L6,-2" fill="none" opacity=".6" stroke-width="1"/>
+</g>
+</defs>
+<g stroke="#5EF2A8" stroke-width="2" stroke-linejoin="round" fill="none">
+<use href="#ipoCube" x="55" y="120"/>
+<use href="#ipoCube" x="315" y="120"/>
+<use href="#ipoCube" x="575" y="120"/>
+<polygon points="68,38 192,38 147,92 113,92" fill="#5EF2A8" fill-opacity=".15"/>
+<rect x="113" y="92" width="34" height="18" fill="#5EF2A8" fill-opacity=".15"/>
+<ellipse cx="130" cy="38" rx="62" ry="7" fill="#07130f" fill-opacity=".8"/>
+<g stroke-width="1.2">
+<use href="#ipoRock" transform="translate(108 32) scale(1.3)"/>
+<use href="#ipoRock" transform="translate(134 27) scale(1.5)"/>
+<use href="#ipoRock" transform="translate(155 33) scale(1.1)"/>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0,-6;0,22;0,22" keyTimes="0;.6;1" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;1;0" keyTimes="0;.6;1" dur="2s" repeatCount="indefinite"/>
+<use href="#ipoRock" transform="translate(130 78) scale(.8)"/>
+</g>
+<use href="#ipoRock" transform="translate(82 252) scale(1.3)"/>
+<use href="#ipoRock" transform="translate(108 254) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(136 250) scale(1.4)"/>
+<use href="#ipoRock" transform="translate(164 253) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(188 255) scale(.9)"/>
+<use href="#ipoRock" transform="translate(96 232) scale(1.1)"/>
+<use href="#ipoRock" transform="translate(124 230) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(152 232) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(176 236) scale(1)"/>
+<use href="#ipoRock" transform="translate(112 212) scale(1)"/>
+<use href="#ipoRock" transform="translate(142 210) scale(1.1)"/>
+<use href="#ipoRock" transform="translate(168 216) scale(.8)"/>
+</g>
+<g transform="translate(368 200)" stroke="#00E676"><g>
+<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+<circle r="32" fill="#00E676" fill-opacity=".18"/>
+<circle r="36" stroke-width="8" stroke-dasharray="9.42"/>
+<circle r="13" fill="#07130f"/>
+</g></g>
+<g transform="translate(419 158)" stroke="#14B8A6"><g>
+<animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="9s" repeatCount="indefinite"/>
+<circle r="24" fill="#14B8A6" fill-opacity=".22"/>
+<circle r="27" stroke-width="6" stroke-dasharray="9.42"/>
+<circle r="10" fill="#07130f"/>
+</g></g>
+<g transform="translate(416 234)" stroke="#FCD34D"><g>
+<animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6.6s" repeatCount="indefinite"/>
+<circle r="17" fill="#FCD34D" fill-opacity=".16"/>
+<circle r="19.5" stroke-width="5" stroke-dasharray="8.75"/>
+<circle r="7" fill="#07130f"/>
+</g></g>
+<g stroke="#FCD34D" stroke-linecap="round"><path d="M452,124 L458,112 M440,120 L441,108 M460,136 L472,132"/></g>
+<rect x="590" y="232" width="122" height="16" rx="8" fill="#14B8A6" fill-opacity=".35"/>
+<line x1="602" y1="240" x2="700" y2="240" stroke-dasharray="6 8"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.4s" repeatCount="indefinite"/></line>
+<circle cx="600" cy="240" r="9" fill="#07130f"/><circle cx="600" cy="240" r="3" fill="#5EF2A8"/>
+<circle cx="702" cy="240" r="9" fill="#07130f"/><circle cx="702" cy="240" r="3" fill="#5EF2A8"/>
+<circle cx="620" cy="217" r="15" fill="url(#ipoBall)" stroke-width="1.5"/>
+<g stroke-width="1.5">
+<rect x="646" y="210" width="22" height="22" fill="#00E676" fill-opacity=".35"/>
+<polygon points="646,210 653,203 675,203 668,210" fill="#5EF2A8" fill-opacity=".5"/>
+<polygon points="668,210 675,203 675,225 668,232" fill="#14B8A6" fill-opacity=".5"/>
+</g>
+<polygon points="686,232 699,204 712,232" fill="#FCD34D" fill-opacity=".28" stroke="#FCD34D" stroke-width="1.8"/>
+<g stroke-width="4" stroke-dasharray="10 7" stroke-linecap="round">
+<line x1="236" y1="195" x2="304" y2="195"><animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/></line>
+<line x1="494" y1="195" x2="564" y2="195"><animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/></line>
+</g>
+<g fill="#5EF2A8" stroke="none">
+<polygon points="300,185 314,195 300,205"/><polygon points="560,185 574,195 560,205"/>
+<polygon points="124,308 136,308 130,319"/><polygon points="384,308 396,308 390,319"/><polygon points="644,308 656,308 650,319"/>
+</g>
+<path d="M130,292 V312 M390,292 V312 M650,292 V312"/>
+<g fill="#07130f" fill-opacity=".88" stroke-opacity=".45" stroke-width="1.5">
+<rect x="15" y="322" width="230" height="112" rx="8"/>
+<rect x="275" y="322" width="230" height="112" rx="8"/>
+<rect x="535" y="322" width="230" height="112" rx="8"/>
+</g>
+<g stroke="none">
+<rect x="15" y="322" width="6" height="112" rx="3" fill="#00E676"/>
+<rect x="275" y="322" width="6" height="112" rx="3" fill="#14B8A6"/>
+<rect x="535" y="322" width="6" height="112" rx="3" fill="#6EE7B7"/>
+</g>
+</g>
+<g stroke="none" font-family="Consolas,'Courier New',monospace" text-anchor="middle" font-size="13" font-weight="700" fill="#5EF2A8" letter-spacing="1">
+<text x="138" y="283">Input</text><text x="398" y="283">Process</text><text x="658" y="283">Output</text>
+</g>
+<g font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#D1FAE5">
+<g font-size="14" font-weight="700" fill="#5EF2A8">
+<text x="33" y="344">Entrada (Input)</text><text x="293" y="344">Proceso (Process)</text><text x="553" y="344">Salida (Output)</text>
+</g>
+<text x="33" y="363">Los datos crudos iniciales que</text><text x="33" y="379">da el usuario o el entorno.</text><text x="33" y="395">Lo que la máquina necesita saber.</text>
+<text x="293" y="363">Cálculos, transformaciones y</text><text x="293" y="379">decisiones lógicas. El motor</text><text x="293" y="395">que hace el trabajo.</text>
+<text x="553" y="363">La información transformada y el</text><text x="553" y="379">resultado final entregado.</text><text x="553" y="395">El objetivo cumplido.</text>
+</g>
+<g font-family="Consolas,'Courier New',monospace" font-size="12" font-weight="700" fill="#FCD34D">
+<text x="33" y="424">En Java: parámetros</text><text x="293" y="424">En Java: cuerpo { }</text><text x="553" y="424">En Java: return</text>
+</g>
+</svg></div>
+        <p class="cap">Figura 1. Entrada (parámetros) · Proceso (cuerpo del método) · Salida (<code>return</code>).</p>
+      </div>
+
+      <div class="panel">
+        <h2>🔬 Anatomía de un método</h2>
+        <pre><span class="k">public static int</span> sumar(<span class="k">int</span> a, <span class="k">int</span> b) {
+    <span class="k">return</span> a + b;
+}</pre>
+        <table>
+          <tr><th>Parte</th><th>En el ejemplo</th><th>Función</th></tr>
+          <tr><td>Modificadores</td><td><code>public static</code></td><td>Define el acceso y si pertenece a la clase.</td></tr>
+          <tr><td>Tipo de retorno</td><td><code>int</code></td><td>Tipo de dato que devuelve (<code>void</code> si no devuelve nada).</td></tr>
+          <tr><td>Nombre</td><td><code>sumar</code></td><td>Identifica al método.</td></tr>
+          <tr><td>Parámetros</td><td><code>int a, int b</code></td><td>Datos de entrada.</td></tr>
+          <tr><td>Cuerpo</td><td><code>{ ... }</code></td><td>Instrucciones que ejecuta.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🚫 Métodos <code>void</code></h2>
+        <p>No devuelven ningún valor: <b>ejecutan una acción</b>.</p>
+        <pre><span class="k">public static void</span> mostrarSuma(<span class="k">int</span> a, <span class="k">int</span> b) {
+    System.out.println(<span class="s">"Suma: "</span> + (a + b));
+}</pre>
+      </div>
+
+      <div class="panel">
+        <h2>🔁 Métodos con <code>return</code></h2>
+        <p>Devuelven un valor que puede <b>guardarse o usarse</b> en otra parte del programa.</p>
+        <pre><span class="k">public static int</span> multiplicar(<span class="k">int</span> a, <span class="k">int</span> b) {
+    <span class="k">return</span> a * b;
+}
+
+<span class="c">// Uso</span>
+<span class="k">int</span> resultado = multiplicar(4, 5); <span class="c">// resultado = 20</span></pre>
+      </div>
+
+      <div class="panel">
+        <h2>⚖️ <code>void</code> vs <code>return</code></h2>
+        <table>
+          <tr><th>Característica</th><th class="ok"><code>void</code></th><th class="ok"><code>return</code></th></tr>
+          <tr><td>Devuelve un valor</td><td class="ok no">✗</td><td class="ok yes">✓</td></tr>
+          <tr><td>Tipo de retorno</td><td class="ok"><code>void</code></td><td class="ok"><code>int</code>, <code>double</code>, <code>String</code> …</td></tr>
+          <tr><td>Se puede guardar en una variable</td><td class="ok no">✗</td><td class="ok yes">✓</td></tr>
+          <tr><td>Uso típico</td><td class="ok">Mostrar, imprimir, modificar</td><td class="ok">Calcular y entregar un resultado</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🔄 Ciclo de vida de un método</h2>
+        <p>Metodología secuencial: los 5 pasos que sigue todo método, de su creación a su uso.</p>
+        <div class="flow">
+          <div class="step"><div class="circ">1</div><div class="st">Declarar</div><div class="sd">Modificadores, tipo y nombre</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">2</div><div class="st">Parámetros</div><div class="sd">Definir los datos de entrada</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ g">3</div><div class="st">Cuerpo</div><div class="sd">Escribir las instrucciones</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">4</div><div class="st">void / return</div><div class="sd">Acción o valor de salida</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ">5</div><div class="st">Ejecución</div><div class="sd">Llamarlo desde <code>main</code></div></div>
+        </div>
+        <pre><span class="c">// 1-2. Declarar + parámetros</span>
+<span class="k">public static int</span> restar(<span class="k">int</span> a, <span class="k">int</span> b) {
+    <span class="k">return</span> a - b;        <span class="c">// 3-4. Cuerpo + return</span>
+}
+<span class="c">// 5. Invocar</span>
+<span class="k">int</span> r = restar(9, 4);       <span class="c">// r = 5</span></pre>
+      </div>
+
+      <div class="panel">
+        <h2>🚀 ¿Cómo se ejecuta un programa Java?</h2>
+        <p>Antes de llamar a un método, el código recorre este camino hasta correr en tu equipo.</p>
+        <div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 215" width="780" height="215" style="width:100%;height:auto;display:block" role="img" aria-label="Compilación y ejecución de Java">
+<defs>
+<linearGradient id="jvBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07130f"/><stop offset="1" stop-color="#0d2e24"/></linearGradient>
+<linearGradient id="jvCube" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6EE7B7"/><stop offset="1" stop-color="#00E676"/></linearGradient>
+<g id="jvDoc" stroke-width="2.5">
+<path d="M-35,0 H15 L35,20 V92 H-35 Z" fill="#5EF2A8" fill-opacity=".08"/>
+<path d="M15,0 V20 H35" fill="none"/>
+</g>
+<polygon id="jvArrow" points="0,-8 26,-8 26,-16 46,0 26,16 26,8 0,8" fill="#14B8A6"/>
+<g id="jvRow">
+<rect x="-38" width="76" height="16" rx="5" fill="#07130f" fill-opacity=".9"/>
+<circle cx="-28" cy="8" r="2.5" fill="#00E676" stroke="none"/>
+<path d="M-18,8 H10" stroke="#A7F3D0" stroke-opacity=".6"/><path d="M18,4 V12 M26,4 V12"/>
+</g>
+</defs>
+<g stroke="#5EF2A8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" fill="none">
+<!-- 1. Código fuente -->
+<use href="#jvDoc" x="55" y="22"/>
+<path d="M36,50 H76 M36,62 H76 M36,86 H76 M36,98 H62" stroke-width="2.5"/>
+<path d="M36,74 H76" stroke="#FCD34D" stroke-width="2.5"/>
+<!-- Flechas -->
+<use href="#jvArrow" x="104" y="68"/>
+<use href="#jvArrow" x="286" y="68"/>
+<use href="#jvArrow" x="430" y="68"/>
+<use href="#jvArrow" x="600" y="68"/>
+<!-- 2. Compilador -->
+<g transform="translate(218 68)">
+<g stroke="#00E676"><g>
+<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+<circle r="19" fill="#00E676" fill-opacity=".3"/>
+<circle r="24" stroke-width="7" stroke-dasharray="8.38"/>
+<circle r="8" fill="#07130f"/>
+</g></g>
+<circle r="3" fill="#00E676" stroke="none"/>
+<path d="M0,-31 V-43 M-4,-37 L0,-43 L4,-37 M0,31 V43 M-4,37 L0,43 L4,37 M-31,0 H-43 M-37,-4 L-43,0 L-37,4 M31,0 H43 M37,-4 L43,0 L37,4" stroke-width="2"/>
+</g>
+<g transform="translate(180 34)" stroke="#FCD34D"><circle r="6" fill="#FCD34D" fill-opacity=".25" stroke-width="2"/><circle r="9.5" stroke-width="4" stroke-dasharray="3.32"/><circle r="2.5" fill="#07130f" stroke="none"/></g><g transform="translate(256 34)" stroke="#14B8A6"><circle r="6" fill="#14B8A6" fill-opacity=".25" stroke-width="2"/><circle r="9.5" stroke-width="4" stroke-dasharray="3.32"/><circle r="2.5" fill="#07130f" stroke="none"/></g><g transform="translate(180 102)" stroke="#14B8A6"><circle r="6" fill="#14B8A6" fill-opacity=".25" stroke-width="2"/><circle r="9.5" stroke-width="4" stroke-dasharray="3.32"/><circle r="2.5" fill="#07130f" stroke="none"/></g><g transform="translate(256 102)" stroke="#FCD34D"><circle r="6" fill="#FCD34D" fill-opacity=".25" stroke-width="2"/><circle r="9.5" stroke-width="4" stroke-dasharray="3.32"/><circle r="2.5" fill="#07130f" stroke="none"/></g>
+<!-- 3. Bytecode -->
+<use href="#jvDoc" x="381" y="22"/>
+<g stroke="none" fill="#5EF2A8" font-family="Consolas,'Courier New',monospace" font-size="7.6" text-anchor="middle"><text x="379" y="50.0">01100001</text><text x="379" y="59.5">00110100</text><text x="379" y="69.0">10010110</text><text x="379" y="78.5">01001010</text><text x="379" y="88.0">01101001</text><text x="379" y="97.5">00101101</text><text x="379" y="107.0">01100110</text></g>
+<!-- 4. JVM -->
+<rect x="490" y="16" width="96" height="100" rx="14" fill="#5EF2A8" fill-opacity=".15"/>
+<polygon points="538,23 552.7,31.5 552.7,48.5 538,57 523.3,48.5 523.3,31.5" fill="url(#jvCube)" stroke="#A7F3D0" stroke-width="2"/>
+<path d="M523.3,31.5 L538,40 L552.7,31.5 M538,40 V57" stroke="#07130f" stroke-width="1.8"/>
+<use href="#jvRow" x="538" y="66"/>
+<use href="#jvRow" x="538" y="90"/>
+<!-- 5. Ejecución -->
+<rect x="660" y="22" width="96" height="56" rx="6" fill="#04100c" fill-opacity=".92"/>
+<g stroke="none"><circle cx="671" cy="31" r="2.2" fill="#FCD34D"/><circle cx="679" cy="31" r="2.2" fill="#5EF2A8"/><circle cx="687" cy="31" r="2.2" fill="#14B8A6"/></g>
+<g stroke="none" fill="#D1FAE5" font-family="Consolas,'Courier New',monospace" font-size="9.5" font-weight="700"><text x="668" y="50">$ java Main</text></g>
+<path d="M668,59 H700" stroke="#6EE7B7" stroke-width="2" opacity=".7"/>
+<path d="M668,68 H730" stroke="#5EF2A8" stroke-width="2"/>
+<path d="M734,68 H746" stroke="#FCD34D" stroke-width="2"/>
+<path d="M708,78 V92 M690,95 H726" stroke-width="3"/>
+<circle cx="666" cy="112" r="7" fill="#00E676" stroke="none"/>
+<path d="M662.5,112 l2.8,3 l5,-6" stroke="#07130f" stroke-width="2"/>
+<g stroke="none" fill="#D1FAE5" font-family="'Segoe UI',Arial,sans-serif" font-size="11"><text x="676" y="116">Ejecución exitosa</text></g>
+<!-- Etiquetas -->
+<g stroke="none" font-family="'Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="700" fill="#5EF2A8" text-anchor="middle">
+<text x="55" y="156">1. Código Fuente</text><text x="218" y="156">2. Compilador</text><text x="381" y="156">3. Bytecode</text><text x="538" y="156">4. JVM</text><text x="708" y="156">5. Ejecución</text>
+</g>
+<g stroke="none" font-family="Consolas,'Courier New',monospace" font-size="11" font-weight="700" fill="#FCD34D" text-anchor="middle">
+<text x="55" y="175">(.java)</text><text x="218" y="175">(javac)</text><text x="381" y="175">(.class)</text><text x="538" y="175">(Java Virtual Machine)</text><text x="708" y="175">(Sistema Operativo)</text>
+</g>
+</g>
+</svg></div>
+        <p class="cap">Figura 2. Código fuente <code>.java</code> → <code>javac</code> → bytecode <code>.class</code> → JVM → ejecución.</p>
+      </div>
+
+      <div class="panel">
+        <h2>📁 Estructura del repositorio</h2>
+        <pre>📦 ALP-2026-G2-
+ ┣ 📂 reposit
+ ┃ ┗ 📂 assets
+ ┃   ┗ 📜 readme.svg
+ ┣ 📂 Docs
+ ┃ ┣ 📂 CLASE1
+ ┃ ┣ 📂 CLASE2
+ ┃ ┣ 📂 INVESTIGACION
+ ┃ ┗ 📂 PREGUNTAS
+ ┣ 📂 EVIDENCIAS
+ ┣ 📂 PREGUNTAS
+ ┗ 📜 README.md</pre>
+      </div>
+
+      <div class="foot">01010010 01100001 01110110 01100001</div>
+    </div>
+  </foreignObject>
+</svg>
